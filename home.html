@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<div class="container my-3">
+  <center><h1>ONLINE BANKING SYSTEM</h1></center>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://ak.picdn.net/shutterstock/videos/25645310/thumb/12.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://ak.picdn.net/shutterstock/videos/23424496/thumb/10.jpg
+" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.freepik.com/free-vector/banking-service-background-bank-building-icon-made-with-currency-symbols-dollar-euro-yen-pound-icons_127544-803.jpg?size=626&ext=jpg
+" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="container my-4">
+    <h2>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Credit Card</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Debit Card</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Net Banking</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Insurance</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Investement</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Loan</a>
+      <a class="btn btn-outline-info btn-lg" href="/bank" role="button">Education Loan Policies</a>
+
+    </h2>
+
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+
+        <h3 class="mb-0">Online Banking</h3>
+        <div class="mb-1 text-muted">Nov 12</div>
+        <p class="card-text mb-auto">From savings to investment and from fund transfers to bill payment you can do all this and more using Internet Banking.</p>
+        <div>
+          <a class="btn btn-outline-info btn-lg" href="/history" role="button">Moblie Banking</a>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  {% endblock body %}

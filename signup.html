@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} Signup {% endblock title %}
+{% block body %}
+<div class="container my-3">
+  <center><h1>SignUp</h1></center>
+  <form method="POST" action="/signup">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name"><b>Name</b></label>
+      <input type="name" class="form-control" id="name" placeholder="Name" name="username">
+    </div>
+    <div class="form-row">
+      <label for="email"><b>Email</b></label>
+      <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="password"><b>New Password</b></label>
+      <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="password1"><b>Password[Again]</b></label>
+      <input type="password" class="form-control" id="password1" placeholder="Password[Again]" name="password1">
+    </div>
+    <div class="form-row">
+      <label for="account" class="form-label"><b>Account Number</b></label>
+      <input type="number" class="form-control" id="account" placeholder="Account Number" name="account" name="account">
+    </div>
+    <div class="form-row">
+      <label for="password" class="form-label"><b>Aadhar</b></label>
+      <input type="password" class="form-control" id="aadhar" placeholder="Password" name="aadhar">
+    </div>
+
+
+    <div class="form-row">
+      <label for="city"><b>City</b></label>
+      <input type="text" class="form-control" id="city" placeholder="City" name="city">
+    </div>
+    <div class="form-group">
+      <label for="inputState"><b>States</b></label>
+      <select id="inputState" class="form-control" name="state">
+        <option selected>States</option>
+        <option>Indore</option>
+        <option>Delhi</option>
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Banglore</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Confirm
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">SignUp</button>
+  </form>
+
+</div>
+{% endblock body %}

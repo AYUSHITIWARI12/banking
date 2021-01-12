@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block title %} ViewCustomer {% endblock title %}
+{% block viewcustomeractive %} active {% endblock viewcustomeractive %}
+
+
+{% block body %}
+
+<div class="container my-3">
+    <center><h2>Transfer Money</h2></center>
+    <form method="post" action="/viewcustomer" >
+        {% csrf_token %}
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label"><b>Full Name</b></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" />
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label"><b>Email Address</b></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+            </div>
+
+            <div class="col-12">
+                <label for="account" class="form-label"><b>Account Number</b></label>
+                <input type="number" class="form-control" id="account" placeholder="Account Number" name="account"/>
+            </div>
+            <div class="col-12">
+                <label for="cif" class="form-label"><b>CIF Number</b></label>
+                <input type="number" class="form-control" id="cif" placeholder="CIF Number" name="cif">
+            </div>
+            <div class="col-md-6">
+                <label for="branchcode" class="form-label"><b>Branch Code</b></label>
+                <input type="text" class="form-control" id="branchcode" name="branchcode">
+            </div>
+            <div class="col-md-4">
+                <label for="state" class="form-label"><b>Select Branch</b></label>
+                <select id="state" class="form-select" name="state">
+                    <option selected>SBI Bank</option>
+                    <option>Yes Bank</option>
+                    <option>AXIS Bank</option>
+                    <option>NET BANKING</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="amount" class="form-label"><b>Amount</b></label>
+                <input type="number" class="form-control" id="amount" name="amount" />
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label"><b>Note</b></label>
+                <textarea class="form-control" name="content" id="content" rows="1"></textarea>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        <b>Confirm Payment</b>
+
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit"  class="btn btn-info">
+                    PAY
+                </button>
+            </div>
+    </form></div>
+
+
+{% endblock body %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
