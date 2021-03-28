@@ -19,6 +19,7 @@ Transaction of money between multiple customer in Django backend.
 ![DELL - Screenshot (3770)](https://user-images.githubusercontent.com/47920126/112747649-4ea1d700-8fd4-11eb-9480-96616370b2e8.png)
 
 
+![DELL - Screenshot (3772)](https://user-images.githubusercontent.com/47920126/112747738-de478580-8fd4-11eb-92b9-d4e18eaf010f.png)
 
 
 --VIEW CUSTOMER
