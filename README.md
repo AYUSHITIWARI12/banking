@@ -26,6 +26,7 @@ Transaction of money between multiple customer in Django backend.
 
 
 --TRANSFER MONEY
+![DELL - Screenshot (3774)](https://user-images.githubusercontent.com/47920126/112747679-8a3ca100-8fd4-11eb-868d-0fcd45d5185a.png)
 
 
 
