@@ -16,6 +16,7 @@ Transaction of money between multiple customer in Django backend.
 
 
 --Home[KHATA]
+![DELL - Screenshot (3770)](https://user-images.githubusercontent.com/47920126/112747649-4ea1d700-8fd4-11eb-9480-96616370b2e8.png)
 
 
 
